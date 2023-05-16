@@ -31,6 +31,17 @@ font-family: 'Roboto', sans-serif;
     width: 95vw;
 }
 
+/*svg*/
+
+.bell-icon, 
+.home-icon, 
+.chart-icon, 
+.people-icon, 
+.settings-icon{
+    width: 1em;
+    height: 1em; 
+}
+
 @media (min-width: 768px) {
 
     .grid-container {
