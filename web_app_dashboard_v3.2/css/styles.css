@@ -83,6 +83,10 @@ padding: 0;
     padding-left: 0px; 
 }
 
+.student-name {
+    display: flex;
+    align-items: center;
+}
 
 
 
