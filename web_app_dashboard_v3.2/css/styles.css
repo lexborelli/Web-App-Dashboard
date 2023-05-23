@@ -42,13 +42,13 @@ padding: 0;
     width: 100vw; 
     color: whitesmoke;
     justify-content: space-between;
+    font-size: 0.7em;
 }
 
 .header-container h1 {
     display: flex;
     justify-content: flex-start;
     padding: 10px; 
-    font-size: 2em; 
 }
 
 .header-group {
@@ -66,6 +66,10 @@ padding: 0;
     width: 3em; 
     height: 3em; 
     padding: 5px; 
+}
+
+.bell-icon:hover { 
+    transform: rotate(0.50rad);
 }
 
 .bell {
@@ -132,6 +136,32 @@ padding: 0;
     width: 4em; 
     height: 4em;
     padding: 5px; 
+}
+
+/*main*/
+
+.main-header {
+    display: grid; 
+}
+
+.alert {
+    display: flex;
+    margin: 20px;
+    padding: 10px 0px 10px 10px; 
+    color: whitesmoke;
+    background-color: #92a1cf;
+    border-radius: 5px;
+}
+
+.alert-banner {
+    display: flex;
+    flex-direction: row;  
+    font-size: larger;  
+    word-spacing: 0.2em;
+}
+
+.alert-banner-close {
+    padding-left: 60px;
 }
 
 .traffic-nav-link {
