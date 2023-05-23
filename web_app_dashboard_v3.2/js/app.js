@@ -14,6 +14,11 @@ alertBanner.addEventListener('click', e => {
     }
 });
 
+
+/*---charts---*/
+
+const trafficCanvas = document.getElementById('traffic-chart');
+
 let trafficData = {
     labels: ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3", "4-10", "11-17", "18-24", "25-31"], 
     datasets: [{
@@ -22,6 +27,17 @@ let trafficData = {
         borderWidth: 1,
     }]
 };
+
+const trafficNav = document.querySelector('.traffic-nav'); 
+
+ trafficNav.addEventListener('click', (e) => {
+    let target = e.target; 
+    if (target.classList.contains('traffic-nav-link')) {
+        target.classList.toggle('traffic-nav-link-selected');
+    } else if (target.classList.contains('traffic-nav-link')) {
+        target.classList.toggle('traffic-nav-link-selected');
+    }
+});
 
 let trafficOptions = {
     backgroundColor: 'rgba(112, 104, 201, .5)',
@@ -47,6 +63,8 @@ let trafficChart = new Chart(trafficCanvas, {
     data: trafficData, 
     options: trafficOptions
 });
+
+/*---Bar Chart---*/
 
 const dailyCanvas = document.getElementById("daily-chart");
 
@@ -78,6 +96,8 @@ const dailyCanvas = document.getElementById("daily-chart");
         data: dailyData, 
         options: dailyOptions
     });
+
+    /*---mobile---*/
 
     const mobileCanvas = document.getElementById("mobile-chart");
 
