@@ -140,14 +140,11 @@ padding: 0;
 
 /*main*/
 
-.main-header {
-    display: grid; 
-}
-
 .alert {
-    display: flex;
+    display: grid;
+    grid-row: 2;
     margin: 20px;
-    padding: 10px 0px 10px 10px; 
+    padding: 10px;
     color: whitesmoke;
     background-color: #92a1cf;
     border-radius: 5px;
@@ -156,12 +153,12 @@ padding: 0;
 .alert-banner {
     display: flex;
     flex-direction: row;  
-    font-size: larger;  
+    font-size: medium;  
     word-spacing: 0.2em;
 }
 
 .alert-banner-close {
-    padding-left: 60px;
+    padding-left: 15px;
 }
 
 .traffic-nav-link {
@@ -175,7 +172,7 @@ padding: 0;
   .headline {
     display: grid; 
     grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column-end: 1;
     width: 128px;
     margin: 5px;
 }
@@ -191,6 +188,38 @@ padding: 0;
     border-color: gray;
     border-width: 1.5px;
   }
+
+  /*traffic*/
+
+  .traffic-header {
+    display: grid;
+    grid-row: 3; 
+  }
+
+  .traffic-nav-header {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    padding-left: 10px; 
+  }
+
+ .traffic-nav {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-evenly;
+    font-weight: 800;
+ }
+ .traffic-nav li {
+    padding: 8px; 
+ }
+
+ .traffic-nav li:first-child {
+    color:whitesmoke;
+    background-color:#8bd698;
+    border-radius: 50%;
+ }
+
+
+  
 
 
 @media (min-width: 768px) {
