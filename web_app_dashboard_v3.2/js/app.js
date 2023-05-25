@@ -49,7 +49,7 @@ let trafficOptions = {
     },
     scales: {
         y:{
-            beginAtZero: true
+            beginAtZero: true,
         }
     },
     plugins: {
