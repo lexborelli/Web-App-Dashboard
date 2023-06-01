@@ -455,7 +455,7 @@ grid-row: 8;
 }
 
 .form-field {
-    margin: 10px 15px 10px 15px;
+    margin: 10px 15px 15px 15px;
     background-color: #F5F5F5;
     border-radius: 5px;
     border: solid 1.5px #C8C8C8;
@@ -475,6 +475,7 @@ grid-row: 8;
     height: 7vh;
     border-radius: 5px;
     width: 45vw;
+    margin-bottom: 15px;
 }
 
 #cancel {
@@ -484,6 +485,7 @@ grid-row: 8;
     height: 7vh;
     border-radius: 5px;
     width: 45vw;
+    margin-bottom: 15px;
 }
 
 .toggle1,
@@ -554,6 +556,23 @@ input #switcher2 {
         grid-template-areas: 
             "header header"
             "nav main";
+            width: 100%;
+    }
+
+    .main-header {
+        width: 100%;
+    }
+    
+    .tab {
+        width: 80vw; 
+    }
+
+    .alert {
+        width: 85vw; 
+    }
+
+    .alert-banner {
+        justify-content: space-between;
     }
 
     /*navigation*/
@@ -561,7 +580,7 @@ input #switcher2 {
     .nav-container {
         display: flex; 
         flex-direction: column;
-        height: 100vh;
+        height: 100%;
     }
 
     .nav-links {
@@ -579,23 +598,38 @@ input #switcher2 {
 
 
     .main {
+        width: 100vw;
+        display: grid;
         grid-template-columns: 50%;
     }
 
-    .traffic, .social {
-        grid-column: 1 /span 1; ;
+    .traffic, .social, .members, .activity, .message, .settings {
+        grid-column: 1 /span 2;
     }
 
-    .daily, .members, .message {
+    .daily {
         grid-column: 1 / span 1;
     }
 
-    .mobile, .activity, .settings {
+    .mobile {
         grid-column: 2 / span 1; 
+        grid-row: 4;
+        border-left: solid;
+        border-color: #d3d3d3;
+    }
+
+    .social-container {
+        width: 100vw; 
+    }
+
+    .social-media {
+        display: flex; 
+        flex-direction: row; 
+        width:90vw;
     }
 
     .widget-container-full {
-        width: 90vw;
+        width: 95vw;
     }
     
     .widget-container-half {
