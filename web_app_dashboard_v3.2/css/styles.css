@@ -704,6 +704,9 @@ input #switcher2 {
         margin-left: 10px;
     }
 
+    .message {
+        padding-left: 25px;
+    }
 }
 
 @media (min-width: 1024px) {
