@@ -70,13 +70,13 @@ padding: 0;
     align-self: center;
 }
 
-.bell-icon:hover { 
-    transform: rotate(0.50rad);
+.bell:hover { 
+transition: 0.6s ease-out;
+fill: red;
 }
 
 .bell {
     fill: white; 
-    transform-origin: 50% 50%;
 }
 
 .logged-in {
@@ -281,8 +281,8 @@ padding: 0;
  .facebook-icon, 
  .insta-icon, 
  .twitter-icon {
-    width: 5em;
-    height: 5em; 
+    width: 3em;
+    height: 3em; 
     border-radius: 45%;
     background-color: #92a1cf;
  }
@@ -416,6 +416,13 @@ visibility: hidden;
     font-size: 18px;
     text-align: center;
 }
+.updates {
+    font-weight: 500;
+}
+
+strong {
+    font-weight:700
+}
 
 .message {
     display: grid;
@@ -537,7 +544,7 @@ input {
 
 input::before {
    position: absolute;
-    content: 'ON';
+    content: '';
     color: white; 
     top: 20%; 
     left: 25%;
@@ -557,17 +564,23 @@ input::after {
     transition: left .3s;
 }
 
+input:checked::before {
+    content: '';
+}
+
 input:checked { 
     background-color: #92a1cf;
 }
-
-input:checked::after {
+input:checked::after { 
     left: 70%;
+
 }
 
 input #switcher2 {
     margin-left: 70px;
 }
+
+
 
 @media (min-width: 768px) {
 
