@@ -104,10 +104,13 @@ fill: red;
 
 .nav-links {
     margin-top: 10px;
+    margin-bottom: 5px;
     display: flex;
     flex-direction: row;
     width: 100%; 
     justify-content: space-evenly;
+    padding-right: 25px;
+    padding-left: 25px;
 }
 
 .nav-links li {
@@ -184,8 +187,11 @@ fill: red;
 .alert-banner {
     display: flex;
     flex-direction: row;  
-    font-size: medium;  
-    word-spacing: 0.2em;
+    }
+
+.alert-words {
+    font-size: 14px;
+    width: 85%;
 }
 
 .alert-banner-close {
@@ -565,7 +571,8 @@ input::after {
 }
 
 input:checked::before {
-    content: '';
+    content: 'ON'; 
+    color: white;
 }
 
 input:checked { 
